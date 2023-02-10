@@ -8,3 +8,45 @@ header {
 header ul {
     margin: 0;
 }
+
+/*
+------------
+Bio Section
+------------ 
+ */
+
+
+
+
+#bio-section {
+    background-color: var(--section-first-color);
+    color: #fff;
+}
+
+#bio-section .img-container {
+    min-width: 230px;
+    max-width: 230px;
+    height: 215px;
+    background-color: blue;
+}
+
+#bio-section .decoration-container {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bio-section .decoration-container hr {
+    width: calc(50% - 10px);
+    border-width: 5px;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+#bio-section .decoration-container i {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
