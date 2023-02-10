@@ -1,5 +1,60 @@
 @import url(variables.css);
 
+/* 
+------------
+Utility
+------------
+*/
+
+.decoration-container {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoration-container hr {
+    width: calc(50% - 10px);
+    border-width: 5px;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.decoration-container i {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.first {
+    background-color: var(--first-pic-color);
+}
+
+.second {
+    background-color: var(--second-pic-color);
+}
+.third {
+    background-color: var(--third-pic-color);
+}
+.fourth {
+    background-color: var(--fourth-pic-color);
+}
+.fifth {
+    background-color: var(--fifth-pic-color);
+}
+.sixth {
+    background-color: var(--sixth-pic-color);
+}
+
+
+/* 
+------------
+Header
+------------
+*/
+
+
+
 header {
     background-color: var(--header-color);
     color: #fff;
@@ -15,9 +70,6 @@ Bio Section
 ------------ 
  */
 
-
-
-
 #bio-section {
     background-color: var(--section-first-color);
     color: #fff;
@@ -30,23 +82,32 @@ Bio Section
     background-color: blue;
 }
 
-#bio-section .decoration-container {
-    width: 40%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/*
+------------
+Portfolio Section
+------------ 
+ */
+
+#portfolio-section {
+    color: var(--header-color);
 }
 
-#bio-section .decoration-container hr {
-    width: calc(50% - 10px);
-    border-width: 5px;
-    opacity: 1;
-    border-radius: 20px;
+#portfolio-section .box-img {
+    border-radius: 10px;
+    height: 300px;
+    padding: 20px;
 }
 
-#bio-section .decoration-container i {
-    flex-grow: 1;
-    padding: 0 10px;
+#portfolio-section .pic-container {
+    margin: 0;
 }
+
+/* #portfolio-section .box-img::after {
+    content: '';
+    display: block;
+    padding-top: 66%;
+} */
+
+
 
