@@ -74,6 +74,10 @@ Utility
     background-color: var(--section-first-color);
 }
 
+.span-green {
+    color: var(--section-first-color);
+}
+
 /* 
 ------------
 Header
@@ -152,6 +156,51 @@ Contact Section
     color: var(--header-color);
 }
 
+
+/*
+------------
+Footer
+------------ 
+*/
+
+footer {
+    color: #fff;
+}
+
+footer .footer-top {
+    background-color: var(--footer-color);
+}
+
+footer .icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+footer .icon:first-child {
+    padding: 20px 25px;
+}
+
+footer .icon i {
+    font-size: 25px;
+}
+
+footer .footer-bottom {
+    background-color: var(--header-color);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
