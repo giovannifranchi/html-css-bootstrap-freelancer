@@ -2,4 +2,9 @@
 
 header {
     background-color: var(--header-color);
+    color: #fff;
+}
+
+header ul {
+    margin: 0;
 }
