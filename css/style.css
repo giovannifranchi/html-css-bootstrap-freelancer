@@ -59,6 +59,20 @@ Utility
     width: auto;
 }
 
+.form {
+    border-bottom: 1px solid var(--header-color);
+    padding-left: 0;
+}
+
+.message {
+    height: 300px;
+}
+
+.green {
+    color: #fff;
+    padding: 10px 20px;
+    background-color: var(--section-first-color);
+}
 
 /* 
 ------------
@@ -125,6 +139,21 @@ About Section
     background-color: var(--section-first-color);
     color: #fff;
 }
+
+
+/*
+------------
+Contact Section
+------------ 
+*/
+
+
+#contact-section {
+    color: var(--header-color);
+}
+
+
+
 
 
 
