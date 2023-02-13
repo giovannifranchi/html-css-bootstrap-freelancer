@@ -59,11 +59,6 @@ Utility
     width: auto;
 }
 
-.form {
-    border-bottom: 1px solid var(--header-color);
-    padding-left: 0;
-}
-
 .message {
     height: 300px;
 }
@@ -78,6 +73,39 @@ Utility
     color: var(--section-first-color);
 }
 
+.ms-img-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.ms-round {
+    border-radius: 20px;
+}
+
+.ms-img-fluid {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ms-download::before {
+    font-family: 'FontAwesome';
+    content: '\f019';
+    color: inherit;
+}
+
+.ms-hidden {
+    display: none;
+}
+
+.ms-border-bottom {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0;
+}
+
 /* 
 ------------
 Header
@@ -89,9 +117,17 @@ header {
     color: #fff;
 }
 
-header ul {
-    margin: 0;
+header a {
+    color: inherit;
 }
+
+header nav li {
+    text-align: end;
+}
+
+/* header ul {
+    margin: 0;
+} */
 
 /*
 ------------
@@ -104,12 +140,6 @@ Bio Section
     color: #fff;
 }
 
-#bio-section .img-container {
-    min-width: 230px;
-    max-width: 230px;
-    height: 215px;
-    background-color: blue;
-}
 
 
 /*
@@ -121,17 +151,6 @@ Portfolio Section
 #portfolio-section {
     color: var(--header-color);
 }
-
-#portfolio-section .box-img {
-    border-radius: 10px;
-    height: 300px;
-    padding: 20px;
-}
-
-#portfolio-section .pic-container {
-    margin: 0;
-}
-
 
 /*
 ------------
@@ -145,6 +164,8 @@ About Section
 }
 
 
+
+
 /*
 ------------
 Contact Section
@@ -155,6 +176,7 @@ Contact Section
 #contact-section {
     color: var(--header-color);
 }
+
 
 
 /*
@@ -174,25 +196,34 @@ footer .footer-top {
 footer .icon-container {
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
 footer .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 0 10px;
+    width: calc(100% / 6);
     border-radius: 50%;
+    position: relative;
     border: 1px solid #fff;
 }
 
-footer .icon:first-child {
-    padding: 20px 25px;
+footer .icon::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
 }
 
 footer .icon i {
-    font-size: 25px;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
+
+
+
 
 footer .footer-bottom {
     background-color: var(--header-color);
@@ -203,9 +234,18 @@ footer .footer-bottom {
 }
 
 
+/* Footer Icon Queries */
 
 
+@media screen and (min-width:768px) {
+    footer .icon {
+        width: calc(100% / 4);
+    }
 
+    footer .icon i {
+        font-size: 1rem;
+    }
+}
 
 
 
