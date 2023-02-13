@@ -164,8 +164,6 @@ About Section
 }
 
 
-
-
 /*
 ------------
 Contact Section
@@ -176,7 +174,6 @@ Contact Section
 #contact-section {
     color: var(--header-color);
 }
-
 
 
 /*
@@ -219,10 +216,6 @@ footer .icon i {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-
-
 
 
 footer .footer-bottom {
